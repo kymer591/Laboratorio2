@@ -1,0 +1,30 @@
+astroCopy code
+---
+// src/pages/posts/[id].astro
+const { id } = Astro.params;
+const postRes = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+const post = await postRes.json();
+export async function getStaticPaths() {
+  return [
+    { params: { id: '1' } },
+    { params: { id: '2' } },
+    { params: { id: '3' } }
+  ];
+}
+---
+
+<html>
+<head>
+  <title>{post.title}</title>
+</head>
+<body>
+  <div class="container">
+    <article>
+      <h1>{post.title}</h1>
+      <p>{post.body}</p>
+      <a href="/">Volver al inicio</a>
+    </article>
+  </div>
+</body>
+</html>
+

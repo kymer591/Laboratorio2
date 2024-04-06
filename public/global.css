@@ -1,0 +1,33 @@
+
+/* public/global.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 30px;
+    padding: 0 20px;
+    text-align: center;
+    font-style: normal;
+    font-size: 16px;
+    font-family: 'sans-serif';
+    
+  }
+  
+  h1, h2 {
+    color: #444;
+  }
+  
+  
